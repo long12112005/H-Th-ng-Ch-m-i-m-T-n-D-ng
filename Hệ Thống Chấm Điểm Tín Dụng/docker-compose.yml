@@ -1,0 +1,22 @@
+services:
+  credit-scoring-app:
+    build: .
+    container_name: credit-scoring-app
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./credit_scoring.db:/app/credit_scoring.db
+      - ./models:/app/models
+      - ./data:/app/data
+    command: python -m streamlit run app.py --server.address 0.0.0.0
+
+  credit-scoring-api:
+    build: .
+    container_name: credit-scoring-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./credit_scoring.db:/app/credit_scoring.db
+      - ./models:/app/models
+      - ./data:/app/data
+    command: python -m uvicorn api:app --host 0.0.0.0 --port 8000
