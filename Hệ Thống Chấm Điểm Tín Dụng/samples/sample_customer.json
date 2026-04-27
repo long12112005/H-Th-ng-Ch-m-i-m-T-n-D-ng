@@ -1,0 +1,19 @@
+{
+  "full_name": "Nguyễn Văn A",
+  "age": 30,
+  "monthly_income": 20000000,
+  "loan_amount": 100000000,
+  "loan_term_months": 24,
+  "credit_history_years": 4,
+  "late_payments_12m": 0,
+  "existing_debt": 20000000,
+  "num_credit_cards": 2,
+  "credit_utilization": 0.35,
+  "employment_years": 3,
+  "employment_type": "full_time",
+  "home_ownership": "rent",
+  "loan_purpose": "personal",
+  "collateral_type": "none",
+  "number_of_dependents": 1,
+  "recent_credit_inquiries": 1
+}
